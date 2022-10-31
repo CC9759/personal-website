@@ -23,6 +23,7 @@ body {
 #main-text {
     margin-top: 7em;
     margin-left: 10%;
+    font-size: larger;
 }
 
 #main .text {
@@ -30,7 +31,7 @@ body {
     flex-direction: column;
     width: 80%;
     font-family: var(--default-font);
-    color: var(--default-font-color)
+    color: var(--default-font-color);
 }
 
 #contact-text {
