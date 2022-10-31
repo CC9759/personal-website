@@ -1,3 +1,3 @@
 # My Personal Website
 
-Made With: JS, HTML and CSS
+Made With: JS, HTML and CSS.
