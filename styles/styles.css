@@ -1,14 +1,32 @@
 :root {
-
+    --header-color: #c1edcc;
+    --page-color: #453f3c;
+    --default-font: "lucida console";
+    --default-font-color: #797270;
 }
 
-a, a:hover, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
 }
 
-#profile {
-    width: 50%;
-    height: auto;
+#introduction {
+    background-color: var(--page-color);
+    justify-content: center;
 }
 
+#introduction-text {
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+#introduction .text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: var(--default-font);
+    color: var(--default-font-color)
+}

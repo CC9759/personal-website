@@ -4,21 +4,27 @@
         <meta charset="UTF-8">
         <title>Celina's Personal Website</title>
         <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./components/header.js" type="text/javascript" defer></script>
     </head>
 
     <body>
-        <header id="nav-header">
+        <!-- <header id="nav-header">
             <a href="aboutMe.html" style="text-decoration: none" class="button">About Me</button></a>
             <a href="projects.html" style="text-decoration: none" class="button">Projects</button></a>
             <a href="contact.html" style="text-decoration: none" class="button">Contact</button></a>
-        </header>
-        <p class="text">
-            <h2>Hello! Welcome to my personal website! :)</h2>
-            <hr>
-            I'm a CS student at Rochester Institute of Technology and I
-            wanted a place to put and show off my personal projects. Feel
-            free to look around!
-        </p>
-        <img id="profile" src="./images/tangerineCtransparent.png" alt="Tangerine Profile">
+            <img id="profile" src="./images/tangerineCtransparent.png" alt="Tangerine Profile">
+        </header> -->
+        <header-component></header-component>
+        <div id="introduction">
+            <div id="introduction-text">
+                <h1 class="text">Hello! Welcome to my personal website! :)</h2>
+                <br>
+                <p class="text">
+                    I'm a CS student at Rochester Institute of Technology and I
+                    wanted a place to put and show off my personal projects. Feel
+                    free to look around!
+                </p>
+            </div>
+        </div>
     </body>
 </html>
