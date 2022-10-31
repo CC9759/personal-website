@@ -2,7 +2,8 @@
     --header-color: #c1edcc;
     --page-color: #453f3c;
     --default-font: "lucida console";
-    --default-font-color: #797270;
+    --default-header-color: #797270;
+    --default-font-color: #b0c0bc;
 }
 
 body {
@@ -13,21 +14,27 @@ body {
     padding: 0%;
 }
 
-#introduction {
+#main {
     background-color: var(--page-color);
     justify-content: center;
     width: 100%;
 }
 
-#introduction-text {
-    margin-top: 20%;
+#main-text {
+    margin-top: 10%;
     margin-left: 10%;
 }
 
-#introduction .text {
+#main .text {
     display: flex;
     flex-direction: column;
     width: 80%;
     font-family: var(--default-font);
     color: var(--default-font-color)
+}
+
+#contact-text {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
 }
