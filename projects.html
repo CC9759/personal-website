@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome Page</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./components/header.js" type="text/javascript"></script>
+        <script src="./components/themeSwitch.js" type="text/javascript"></script>
+    </head>
+
+    <body onload="setStyle()">
+        <header-component></header-component>
+        <div id="main">
+            <div id="main-text">
+                <h1 class="text">Projects:</h1>
+                <div id="project-text" style="margin-bottom:4em">   
+                    <a class="text" href="index.html" style="text-decoration: none" class="button">This Website</a>
+                    <a class="text" href="https://youtu.be/WRGkKjkJ6MY" style="text-decoration: none" class="button">
+                        Pizza Themed E-Store
+                    </a>
+                    <a class="text" href="https://devpost.com/software/cinnedle" style="text-decoration: none" class="button">
+                        Meet & Hack 2022: Cinedle
+                    </a>
+                    <a class="text" href="https://devpost.com/software/bdayer" style="text-decoration: none" class="button">
+                        UB Hacking 2020: Bdayer
+                    </a>
+                </div> 
+                <div id="text-cursor"></div>
+            </div>
+        </div>
+    </body>
+</html>

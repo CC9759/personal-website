@@ -21,7 +21,7 @@ body {
 }
 
 #main-text {
-    margin-top: 10%;
+    margin-top: 7em;
     margin-left: 10%;
 }
 
@@ -35,6 +35,32 @@ body {
 
 #contact-text {
     position: fixed;
-    bottom: 10%;
-    width: 100%;
+    bottom: 2em;
+    width: 40%;
+}
+
+#contact-text a {
+    margin-top: 2em;
+}
+
+#project-text a {
+    margin-top: 4em;
+}
+
+@keyframes cursor-flash {
+    0%,50% {
+        opacity: 0;
+    }
+    51%,100% {
+    opacity: 1;
+    }
+}
+
+#text-cursor {
+    height: 20px;
+    width: 10px;
+    background-color: var(--default-font-color);
+    animation-name: cursor-flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }

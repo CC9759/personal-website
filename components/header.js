@@ -2,7 +2,7 @@ const headerTemplate = document.createElement('template')
 
 headerTemplate.innerHTML = `
 <header id="nav-header">
-    <img id="profile" src="./images/tangerineCtransparent.png" alt="Tangerine Profile">
+    <img id="profile" src="./images/tangerineCtransparent.png" alt="Tangerine Profile" onclick="lightMode()">
     <a href="index.html" style="text-decoration: none" class="button">Welcome</button></a>
     <a href="aboutMe.html" style="text-decoration: none" class="button">About Me</button></a>
     <a href="projects.html" style="text-decoration: none" class="button">Projects</button></a>
