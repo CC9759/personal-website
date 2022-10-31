@@ -16,6 +16,7 @@ body {
 #introduction {
     background-color: var(--page-color);
     justify-content: center;
+    width: 100%;
 }
 
 #introduction-text {
