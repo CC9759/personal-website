@@ -3,10 +3,11 @@ const headerTemplate = document.createElement('template')
 headerTemplate.innerHTML = `
 <header id="nav-header">
     <img id="profile" src="./images/tangerineCtransparent.png" alt="Tangerine Profile" onclick="lightMode()">
-    <a href="index.html" style="text-decoration: none" class="button">Welcome</button></a>
-    <a href="aboutMe.html" style="text-decoration: none" class="button">About Me</button></a>
-    <a href="projects.html" style="text-decoration: none" class="button">Projects</button></a>
-</header>
+    <a href="index.html" style="text-decoration: none" class="button">Welcome</a>
+    <a href="aboutMe.html" style="text-decoration: none" class="button">About Me</a>
+    <a href="projects.html" style="text-decoration: none" class="button">Projects</a>
+    <a href="checkSplitter.html" id="secret"></a>
+    </header>
 <style>
 a, a:hover, a:visited, a:active {
     color: inherit;
@@ -16,8 +17,8 @@ a, a:hover, a:visited, a:active {
 #profile {
     display: flex;
     object-fit: fill;
-    width: auto;
-    height: 20%;
+    width: 10em;
+    height: auto;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -38,7 +39,14 @@ header {
 
 header a {
     margin: 20%;
-    flex-grow: 2;
+}
+
+#secret {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--default-header-color);
 }
 </style>
 `; 

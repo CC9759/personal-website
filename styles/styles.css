@@ -24,6 +24,8 @@ body {
     margin-top: 7em;
     margin-left: 10%;
     font-size: larger;
+    font-family: var(--default-font);
+    color: var(--default-font-color);
 }
 
 #main .text {
@@ -70,4 +72,66 @@ body {
     animation-name: cursor-flash;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+}
+
+label{
+    font-size: medium;
+}
+
+input {
+    background-color: var(--page-color);
+    border-color: var(--default-font-color);
+    border-style: solid;
+    width: 5em;
+}
+
+/* button {
+    background-color: var(--default-font-color);
+    font-family: var(--default-font);
+    color: var(--page-color);
+    border-style: solid;
+    border-color: var(--default-font-color);
+    width: fit-content;
+} */
+
+li {
+    margin: 1em;
+}
+
+input[type='text'] {
+    font-family: var(--default-font);
+    color: var(--default-font-color);
+}
+
+@keyframes button-change {
+    from{
+        background-color: var(--default-font-color);
+        color: var(--page-color);
+    }
+    to{
+        background-color: var(--page-color);
+        color: var(--default-font-color);
+    }
+}
+
+#submit, button {
+    background-color: var(--default-font-color);
+    font-family: var(--default-font);
+    color: var(--page-color);
+    border-style: solid;
+    border-color: var(--default-font-color);
+}
+
+#submit:hover, button:hover {
+    animation-name: button-change;
+    animation-fill-mode: forwards;
+    animation-duration: .1s;
+}
+
+#peopleList {
+    font-size: small;
+}
+
+#people, #pay {
+    display: inline-block;
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Secret Check Splitter App</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="./components/header.js" type="text/javascript"></script>
+        <script src="./components/themeSwitch.js" type="text/javascript"></script>
+        <script src="./components/checkSplitter.js" type="text/javascript" defer></script>
+    </head>
+
+    <body onload="setStyle()">
+        <header-component></header-component>
+        <div id="main">
+            <div id="main-text">
+                <h1 class="text">(Secret) Check Splitter</h1>
+                <form id="totalPrice">
+                    <label for="price">Price:</label>
+                    <input type="text" inputmode ="numeric" id="price" name="price">
+                    <label for="tax">Tax:</label>
+                    <input type="text" inputmode ="numeric" id="tax" name="tax">
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+                <form id="itemInfo">
+                    <label for="itemName">Item Name:</label>
+                    <input type="text" inputmode ="text" id="itemName" name="itemName">
+                    <label for="itemPrice">Item Price:</label>
+                    <input type="text" inputmode ="numeric" id="itemPrice" name="itemPrice">
+                </form>
+                <button id="addPerson">Add Person</button>
+                <div id="peopleList">
+                    <ul id="people" style="list-style: none;"></ul>
+                    <ul id="pay" style="list-style: none;"></ul>
+                </div>
+                <button onclick="calculate()">Done</button>
+            </div>
+        </div>
+    </body>
+</html>
